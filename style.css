@@ -1,0 +1,102 @@
+html {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  margin:0;
+}
+
+.circleBase {
+    border-radius: 50%;
+    float:left;
+}
+/*for the circle shapes*/
+.type1 {
+    width: 200px;
+    height: 200px;
+    background: yellow;
+    border: 3px solid yellow;
+} /*http://stackoverflow.com/questions/4840736/easier-way-to-create-circle-div-than-using-an-image */
+/*for the circle shapes*/
+.clear {
+	clear:both;
+}
+/*for the circle shapes*/
+.type2 {
+    width: 200px;
+    height: 200px;
+    background: purple;
+    border: 3px solid purple;
+} /*http://stackoverflow.com/questions/4840736/easier-way-to-create-circle-div-than-using-an-image */
+/*for the circle shapes*/
+.type3 {
+    width: 200px;
+    height: 200px;
+    background: #009999;
+    border: 3px solid #009999;
+} /*http://stackoverflow.com/questions/4840736/easier-way-to-create-circle-div-than-using-an-image */
+/*for the circle shapes*/
+
+.type4 {
+    width: 200px;
+    height: 200px;
+    background: #5CE6E6;
+    border: 3px solid #5CE6E6;
+} /*http://stackoverflow.com/questions/4840736/easier-way-to-create-circle-div-than-using-an-image */
+
+/*slides*/
+#projects {
+	height:100%;
+  width:100%;
+  position:absolute;
+}
+
+#project-1 {background-color: #FF0066;
+            font-size:200px;
+            text-indent:75px;
+}
+
+#project-2 {background-color: #7BAABE; 
+            font-size:200px;
+            text-indent:75px;
+}
+
+#project-3 {background-color: #7BAABE;
+          font-size:200px;
+          text-indent:75px;
+  }
+
+
+.slide {
+	position: absolute;
+	top:0;
+	left:0;
+	height: 0;							
+	width: 100%;
+  overflow: hidden;
+	-webkit-transition: height 0.9s ease-in-out;
+
+	// this would be vendor prefixed:
+	transition: height 0.9s ease-in-out;
+}
+
+// so that slides can transition from bottom-up
+.slide:nth-child(1) { z-index:10 }
+.slide:nth-child(2) { z-index:9 }
+.slide:nth-child(3) { z-index:8 }
+
+
+.active.slide {
+	height: 100%;
+}
+
+.circleBase {
+    border-radius: 50%;
+    float:left;
+}
+
